@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    padding: 10px;
+    margin: 20px 20px 20px 20px;
+    justify-content: space-around;
+}
+.container {
+ 
+    height: 600px;
+    width: 500px;
+    border: 1px solid black;
+    border-radius: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    opacity: 50%;
+    background-color:skyblue;
+
+    &:hover {
+        opacity: 1;
+    }
+
+    &__block {
+        height: 200px;
+        width: 400px;
+        margin: 20px 0;
+        border-radius: 10%;    
+        border: 1px solid black;
+    }
+    
+    &--pink {
+        background-color: rgb(145, 117, 172);              
+    }
+
+    &--pink:hover {
+        background-color: magenta;
+        opacity: 1;
+    }
+
+    &--green {
+        background-color:palegreen;          
+    }
+
+    &--green:hover {
+        background-color: yellow;
+    }
+}
